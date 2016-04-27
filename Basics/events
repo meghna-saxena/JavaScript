@@ -5,9 +5,10 @@ body{text-align:"center"}
 </style>
 
 <body>
+<button onclick="getElementById('time').innerHTML=Date()">The time is?</button>
+<p id="time"></p>
 
 <button onclick="myFunction()" onmouseover="this.style.color='red'">Click Me</button>
-
 <p id="demo"></p> 
 
 <script>
