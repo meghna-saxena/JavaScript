@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Calculator</h1>
+
+Please input a number:
+<input type="text" name= "numb 1" id="input1"></input>
+<br>
+
+Please input another number:
+<input type="text" name= "numb 2" id="input2"></input>
+<br>
+Result:
+
+<div type=text id='result'> </div>
+
+<br><br><br>
+<input type=button value="+" onClick="add()">
+<input type=button value="-" onClick="minus()">
+<input type=button value="x" onClick="multiply()">
+<input type=button value="/" onClick="divide()">
+<input type=button value="&radic;" onClick="sqrt()">
+
+
+<script type="text/javascript">
+
+function add() {
+  var x = document.getElementById("input1").value;
+  var y = document.getElementById("input2").value;
+  var z = parseInt(x) + parseInt(y);
+
+  document.getElementById("result").innerHTML = z;
+}
+
+function minus() {
+  var x = document.getElementById("input1").value;
+  var y = document.getElementById("input2").value;
+  var z = parseInt(x) - parseInt(y);
+
+  document.getElementById("result").innerHTML = z;
+}
+function multiply() {
+  var x = document.getElementById("input1").value;
+  var y = document.getElementById("input2").value;
+  var z = parseInt(x) * parseInt(y);
+
+  document.getElementById("result").innerHTML = z;
+}
+function divide() {
+  var x = document.getElementById("input1").value;
+  var y = document.getElementById("input2").value;
+  var z = parseInt(x) / parseInt(y);
+
+  document.getElementById("result").innerHTML = z;
+}
+function sqrt() {
+	var x = document.getElementById("input1").value;
+	document.getElementById("result").innerHTML = Math.sqrt(x);
+
+</script>
+ 
+</body>
+</html> 
