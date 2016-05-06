@@ -1,0 +1,91 @@
+<!--Write a function named calculateAge that:
+takes 2 arguments: birth year, current year.
+calculates the 2 possible ages based on those years.
+outputs the result-->
+<!DOCTYPE html> 
+<html>
+<style> 
+	h1:hover{background-color:gray;
+		color:white; 
+		font-size: 150%;
+		padding:5px;
+	}
+	body {text-align: center;
+		background-color: black;
+		color: white;
+
+	} 
+	.button {
+		position: relative;
+		background-color: #4CAF50;
+		border: none;
+		font-size: 28px;
+		color: #FFFFFF;
+		padding: 20px;
+		width: 50%;
+		text-align: center;
+		-webkit-transition-duration: 0.4s; 
+		transition-duration: 0.4s;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.button:after {
+		content: "";
+		background: #90EE90;
+		display: block;
+		position: absolute;
+		padding-top: 300%;
+		padding-left: 350%;
+		margin-left: -20px!important;
+		margin-top: -120%;
+		opacity: 0;
+		transition: all 0.8s
+	}
+
+	.button:active:after {
+		padding: 0;
+		margin: 0;
+		opacity: 1;
+		transition: 0s
+	}
+
+	img {
+		width: 200px;
+		height: 300px;
+		background: yellow;
+		-webkit-transition: width 2s, height 4s; 
+		transition: width 2s, height 4s;
+	}
+
+	img:hover {
+		width: 300px;
+		height: 400px;
+	}
+</style>
+<body>
+
+	<h1>Hi Raj, wanna know your age?</h1><br>
+	<img src="http://www.lovefortunetelling.com/wp-content/uploads/2015/10/How-To-Make-A-Real-Fortune-Teller-Step-By-Step.jpg" alt="Age Calculator" align="left">
+
+	Your birth year:
+	<input type="text" name= "num1" id="input1"></input>
+	<br><br><br>
+	Current year:
+	<input type="text" name= "num2" id="input2"></input>
+	<br><br><br>
+
+	Result:
+
+	<div type=text id="result"> </div>
+
+	<input type="button" class="button" value="Get Age" onClick="calculateAge(birthYear, currentYear)">
+
+	<script>
+		function calculateAge(birthYear, currentYear) {
+			var age = currentYear - birthYear;
+			document.getElementById("result").innerHTML = ('You are either ' + age + ' or ' + (age - 1));
+		}
+	</script>
+</body>
+</html>
