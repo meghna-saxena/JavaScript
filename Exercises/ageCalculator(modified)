@@ -81,7 +81,6 @@ Outputs the result-->
 			var birthYear = document.getElementById("input").value;
 			var d = new Date();
 			var currentYear = d.getFullYear();
-			document.getElementById("demo").innerHTML = currentYear;
 			
 			var age = currentYear - birthYear;
 			document.getElementById("result").innerHTML = ('You are ' + age);
