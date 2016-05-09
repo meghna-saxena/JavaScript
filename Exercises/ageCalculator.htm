@@ -1,3 +1,20 @@
+Skip to content
+This repository
+Search
+Pull requests
+Issues
+Gist
+ @meghna-saxena
+ Watch 1
+  Star 0
+  Fork 1 raj-saxena/JavaScript
+forked from meghna-saxena/JavaScript
+ Code  Pull requests 0  Wiki  Pulse  Graphs
+Tree: 67d4bd601a Find file Copy pathJavaScript/Exercises/ageCalculator.htm
+67d4bd6  5 minutes ago
+@raj-saxena raj-saxena Method parameters changes.
+2 contributors @meghna-saxena @raj-saxena
+RawBlameHistory    93 lines (81 sloc)  1.88 KB
 <!--Write a function named calculateAge that:
 takes 2 arguments: birth year, current year.
 calculates the 2 possible ages based on those years.
@@ -13,7 +30,6 @@ outputs the result-->
 	body {text-align: center;
 		background-color: black;
 		color: white;
-
 	} 
 	.button {
 		position: relative;
@@ -29,7 +45,6 @@ outputs the result-->
 		text-decoration: none;
 		cursor: pointer;
 	}
-
 	.button:after {
 		content: "";
 		background: #90EE90;
@@ -42,14 +57,12 @@ outputs the result-->
 		opacity: 0;
 		transition: all 0.8s
 	}
-
 	.button:active:after {
 		padding: 0;
 		margin: 0;
 		opacity: 1;
 		transition: 0s
 	}
-
 	img {
 		width: 200px;
 		height: 300px;
@@ -57,7 +70,6 @@ outputs the result-->
 		-webkit-transition: width 2s, height 4s; 
 		transition: width 2s, height 4s;
 	}
-
 	img:hover {
 		width: 300px;
 		height: 400px;
@@ -79,10 +91,13 @@ outputs the result-->
 
 	<div type=text id="result"> </div>
 
-	<input type="button" class="button" value="Get Age" onClick="calculateAge(birthYear, currentYear)">
+	<input type="button" class="button" value="Get Age" onClick="calculateAge()">
 
 	<script>
-		function calculateAge(birthYear, currentYear) {
+		function calculateAge() {
+			//Get the values of 'birthYear' and 'currentYear' here before using them.
+			var birthYear = document.getElementById("input1").value;
+			var currentYear = document.getElementById("input2").value;
 			var age = currentYear - birthYear;
 			document.getElementById("result").innerHTML = ('You are ' + age);
 		}
