@@ -1,8 +1,8 @@
 
 <!--Write a function named calculateAge that:
-takes 2 arguments: birth year from user 
-calculate the age by subtracting from current year.
-outputs the result-->
+Takes an argument: birth year from user 
+Calculate the age by subtracting from current year.
+Outputs the result-->
 <!DOCTYPE html> 
 <html>
 <style> 
