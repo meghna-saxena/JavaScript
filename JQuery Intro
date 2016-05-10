@@ -1,0 +1,13 @@
+The following markup shows how we might have run a “Hello World” alert without jQuery:
+
+Bad markup:
+<script language="javascript">
+alert('Hello World');
+</script>
+
+
+Good markup:
+$(document).ready(function()
+{
+	alert('Hello World');
+});
