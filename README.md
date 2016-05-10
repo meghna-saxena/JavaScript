@@ -11,5 +11,5 @@ _Markdown is a lightweight markup language based on the formatting conventions t
 > looking like it's been marked up with tags
 > or formatting instructions.
 
-Hail [John Gruber]:https://en.wikipedia.org/wiki/John_Gruber
+Hail [John Gruber][df1]
 
