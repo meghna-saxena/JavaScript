@@ -27,3 +27,29 @@ To use an external script, put the name of the script file in the src (source) a
 ```
 <script src="myScript.js"></script>
 ```
+
+##### JS Data Display
+- Writing into an HTML element, using innerHTML. It is a common way to display data in HTML. JavaScript uses the document.getElementById(id) method.
+The id attribute defines the HTML element. The innerHTML property defines the HTML content.
+
+- Writing into the HTML output using document.write(). 
+Using document.write() after an HTML document is fully loaded, will delete all existing HTML, therefore it should only be used for testing.
+
+- Writing into an alert box, using window.alert().
+- Writing into the browser console, using console.log().
+
+* In HTML, JavaScript programs are executed by the web browser.
+In a programming language, program instructions are called statements, which are separated by semicolons.
+
+
+###### JavaScript Statements 
+JavaScript statements are "instructions" to be "executed" by the web browser.
+Values, Operators, Expressions, Keywords, and Comments.
+In JavaScript, the first character must be a letter, or an underscore (_), or a dollar sign ($).
+
+Numbers are not allowed as the first character.
+This way JavaScript can easily distinguish identifiers from numbers.
+Case sensitive. 
+Hyphens are not allowed in JavaScript, Lower Camel Case is generally used.
+
+
