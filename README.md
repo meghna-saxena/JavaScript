@@ -93,3 +93,26 @@ var x = "5" + 2 + 3;
 Order in which operations are performed in an arithmetic expression.
 - Multiplication (*) and division (/) have higher precedence than addition (+) and subtraction (-).
 - When using parentheses, the operations inside the parentheses are computed first.
+
+###### Typeof operator 
+Returns the type of a variable or an expression.
+string
+number
+boolean
+null
+undefined
+Null- In JavaScript, the data type of null is an object.
+function
+object
+
+###### Functions
+Block of code designed to perform a particular task.
+Executed when "something" invokes it (calls it).
+Reusable
+
+```
+function myFunction(p1, p2) {
+    return p1 * p2;              // The function returns the product of p1 and p2
+}
+```
+When JavaScript reaches a return statement, the function will stop executing, compute a return value.
