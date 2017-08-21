@@ -52,6 +52,10 @@ This way JavaScript can easily distinguish identifiers from numbers.
 Case sensitive. 
 Hyphens are not allowed in JavaScript, Lower Camel Case is generally used.
 
-####### Variables
+###### Variables
 *If you put a number in quotes, the rest of the numbers will be treated as strings, and concatenated.
 
+```
+var x = "5" + 2 + 3;
+```
+= 523
