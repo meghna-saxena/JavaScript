@@ -53,7 +53,9 @@ Case sensitive.
 Hyphens are not allowed in JavaScript, Lower Camel Case is generally used.
 
 ###### Variables
-*If you put a number in quotes, the rest of the numbers will be treated as strings, and concatenated.
+* Store data values.
+* Fixed values are called literals. Variable values are called variables.
+* If you put a number in quotes, the rest of the numbers will be treated as strings, and concatenated.
 
 ```
 var x = "5" + 2 + 3;
@@ -71,6 +73,7 @@ var x = "5" + 2 + 3;
 ```
 
 * The addition assignment operator (+=) adds a value to a variable.
+* Modular operator (%) returns the division remainder.
 * If you add a number and a string, the result will be a string!
 * When used on strings, the + operator is called the concatenation operator.
 
@@ -84,5 +87,9 @@ var x = "5" + 2 + 3;
 <	less than
 >=	greater than or equal to
 <=	less than or equal to
-```
 ?	ternary operator
+```
+###### Operator Precedence
+Order in which operations are performed in an arithmetic expression.
+- Multiplication (*) and division (/) have higher precedence than addition (+) and subtraction (-).
+- When using parentheses, the operations inside the parentheses are computed first.
