@@ -69,7 +69,21 @@ document.getElementById("demo").innerHTML = person.fullName();
 
 
 <!-- EVENTS -->
-<span onmouseover="this.style.color='red'">Mouse over me!</span>
+<!-- <span onmouseover="this.style.color='red'">Mouse over me!</span> -->
+
+<!-- STRINGS INTO ARRAYS -->
+
+<script>
+var str = "Hello";
+var arr = str.split("");
+var text = "";
+var i;
+for (i = 0; i < arr.length; i++) {
+    text += arr[i] + "<br>"
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
 </body>
-</html>
+</html> 
 

@@ -164,3 +164,29 @@ var firstName = new String("John");
 ```
 Note the difference between (x==y) equal value and (x===y) equal value and type.
 Comparing two JavaScript objects will always return false.
+
+####### String Methods
+Extracting String Parts
+- slice(start, end)
+- substring(start, end)
+- substr(start, length)
+
+###### String to an Array
+String can be converted to an array with the split() 
+
+```
+var txt = "Hello";       // String
+txt.split("");           // Split in characters
+```
+
+###### Variables to Numbers
+Number()	Returns a number, converted from its argument.
+parseFloat()	Parses its argument and returns a floating point number
+parseInt()	Parses its argument and returns an integer
+
+###### Number Properties
+MAX_VALUE	Returns the largest number possible in JavaScript
+MIN_VALUE	Returns the smallest number possible in JavaScript
+NEGATIVE_INFINITY	Represents negative infinity (returned on overflow)
+NaN	Represents a "Not-a-Number" value
+POSITIVE_INFINITY	Represents infinity (returned on overflow)
