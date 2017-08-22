@@ -190,3 +190,40 @@ MIN_VALUE	Returns the smallest number possible in JavaScript
 NEGATIVE_INFINITY	Represents negative infinity (returned on overflow)
 NaN	Represents a "Not-a-Number" value
 POSITIVE_INFINITY	Represents infinity (returned on overflow)
+
+###### Math methods
+Math.min() and Math.max()
+Math.random() always returns a number lower than 1
+Math.round(), Math.pow(), Math.sqrt()
+
+Math.ceil(x) returns the value of x rounded up to its nearest integer:
+Math.ceil(4.4);     // returns 5
+
+Math.floor(x) returns the value of x rounded down to its nearest integer:
+Math.floor(4.7);    // returns 4
+
+####### Math random
+0 (inclusive),  and 1 (exclusive)
+
+Math.random() used with Math.floor() can be used to return random integers.
+
+Math.floor(Math.random() * 10);     // returns a number between 0 and 9
+Math.floor(Math.random() * 10) + 1;  // returns a number between 1 and 10
+
+####### Random Functions
+- Returns a random number between min (included) and max (excluded):
+
+```
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min) ) + min;
+}
+```
+
+- Returns a random number between min and max (both included):
+
+```
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+```
+
