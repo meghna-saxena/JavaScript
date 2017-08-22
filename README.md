@@ -132,3 +132,35 @@ objectName["propertyName"]
 ```
 objectName.methodName()
 ```
+
+###### Events
+```
+<button onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>
+
+Or code changes the content of its own element (using this.innerHTML):
+<button onclick="this.innerHTML = Date()">The time is?</button>
+```
+Common HTML Events
+onchange - An HTML element has been changed
+onclick - The user clicks an HTML element
+onmouseover- The user moves the mouse over an HTML element
+onmouseout - The user moves the mouse away from an HTML element
+onkeydown - The user pushes a keyboard key
+onload - The browser has finished loading the page
+
+###### Strings
+The backslash ( \ ) escape character turns special characters into string characters:
+
+Example
+var x = 'It\'s alright';
+var y = "We are the so-called \"Vikings\" from the north."
+
+Strings Can be Objects
+var firstName = "John";
+can also be defined as objects with the keyword new:
+
+```
+var firstName = new String("John");
+```
+Note the difference between (x==y) equal value and (x===y) equal value and type.
+Comparing two JavaScript objects will always return false.
