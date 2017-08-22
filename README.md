@@ -116,3 +116,19 @@ function myFunction(p1, p2) {
 }
 ```
 When JavaScript reaches a return statement, the function will stop executing, compute a return value.
+
+###### Objects
+The name:values pairs (in JavaScript objects) are called properties.
+
+- Access object properties in two ways:
+
+```
+objectName.propertyName
+or
+objectName["propertyName"]
+```
+- Access object methods:
+
+```
+objectName.methodName()
+```
