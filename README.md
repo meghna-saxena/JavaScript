@@ -221,9 +221,17 @@ function getRndInteger(min, max) {
 
 - Returns a random number between min and max (both included):
 
-```
+```1
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
 ```
 
+###### Arrays
+Stores multiple values in a single variable.
+var cars = ["Saab", "Volvo", "BMW"];
+or
+var cars = new Array("Saab", "Volvo", "BMW");
+
+- [0] is the first element in an array. [1] is the second. Array indexes start with 0.
+- Arrays use numbered indexes, objects use named indexes.
