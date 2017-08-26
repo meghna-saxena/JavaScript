@@ -52,7 +52,7 @@ document.getElementById("demo").innerHTML = text;
 <!-- Conditional (ternary) operator
 	=========================================================================== -->
 
-	<p>Input your age and click the button:</p>
+	<!-- <p>Input your age and click the button:</p>
 
 	<input id="age" value="18" />
 
@@ -71,11 +71,11 @@ document.getElementById("demo").innerHTML = text;
 			}
 			document.getElementById("demo").innerHTML = voteable;
 		}
-	</script>
+	</script> -->
 <!-- 
 	=======================================================================-->
 
-	First Name: <input type="text" id="fname" value="John">
+	<!-- First Name: <input type="text" id="fname" value="John">
 	<button onclick="checkName()">Check Name</button>
 	<p id="demo"></p>
 
@@ -85,10 +85,9 @@ document.getElementById("demo").innerHTML = text;
 			var result = (firstName === "John") ? "Hello John!":"You're not John!";
 			document.getElementById("demo").innerHTML = result;
 		}
-	</script>
-<!-- ============================================================================== -->
-	
-	<script>
+	</script> -->
+	<!-- ============================================================================== -->
+	<!-- <script>
 		var greeting;
 		var hour = new Date().getHours();
 
@@ -99,6 +98,25 @@ document.getElementById("demo").innerHTML = text;
 		}
 
 		document.getElementById("demo").innerHTML = greeting;
+	</script> -->
+
+	<!-- ================================================================================== -->
+
+	<button onclick="myFunction()">Try it</button>
+
+	<p id="demo"></p>
+
+	<script>
+		function myFunction() {
+			var hour = new Date().getHours(); 
+			var greeting;
+			if (hour < 18) {
+				greeting = "Good day";
+			} else {
+				greeting = "Good evening";
+			}
+			document.getElementById("demo").innerHTML = greeting;
+		}
 	</script>
 
 </body>
