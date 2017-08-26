@@ -86,5 +86,20 @@ document.getElementById("demo").innerHTML = text;
 			document.getElementById("demo").innerHTML = result;
 		}
 	</script>
+<!-- ============================================================================== -->
+	
+	<script>
+		var greeting;
+		var hour = new Date().getHours();
+
+		if (hour < 18) {
+			greeting = "Good day";
+		} else {
+			greeting = "Good evening";
+		}
+
+		document.getElementById("demo").innerHTML = greeting;
+	</script>
+
 </body>
 </html>
