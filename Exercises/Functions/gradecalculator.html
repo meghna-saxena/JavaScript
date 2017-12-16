@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grade Calculator</title>
+</head>
+<body>
+<script>
+  /*
+  function gradeCalc() {
+    Prompt to enter 3 marks: Maths, Physics and Chemistry;
+    Calculate average of 3 subject marks;
+      < 70      - Grade "C",
+      70..90  - Grade "B",
+      > 90   - Grade "A"
+    Output the result.
+  */
+ 
+  function gradeCalc() {
+    var mathMark = parseInt(prompt("Input mark for MATHS:", "integer between 50 and 100"));
+    var physicsMark = parseInt(prompt("Input mark for PHYSICS:", "integer between 50 and 100"));
+    var chemistryMark = parseInt(prompt("Input mark for CHEMISTRY:", "integer between 50 and 100"));
+    //Calculate the average value
+    var averageMark = (mathMark + physicsMark + chemistryMark) / 3;
+    //Transform average valut to the final Grade
+    var theGrade;
+    if (averageMark < 70) {
+      theGrade = "C";
+    } else {
+      if (averageMark >= 70 && averageMark < 90) {
+        theGrade = "B";
+      }
+      else {
+        theGrade = "A";
+      }
+    }
+    //Output the result...
+    document.writeln("<h2>Student got the following marks:</h2>");
+    document.writeln("Maths:" + mathMark.toString());
+    document.writeln("Physics:" + physicsMark.toString());
+    document.writeln("Chemistry:" + chemistryMark.toString());
+    document.writeln("<h2>Average mark \"" + averageMark.toString() +"\"</h2>");
+    document.writeln("<h1>Final grade is \"" + theGrade + "\"</h1>");
+    //...and, just in case, return the value of final grade
+    return theGrade;
+  }
+  
+  //Call the function
+  var grade = gradeCalc();
+  document.writeln("<br><br>Function gradeCalc() returned value \"" + grade + "\"");
+  
+</script>
+</body>
+</html>
