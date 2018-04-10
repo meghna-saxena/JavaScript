@@ -1,0 +1,62 @@
+<!-- 
+Step 1 - Make a list of trips that together form a journey from one place to another
+Step 2 - A single trip has 'from' and 'to' properties
+Step 3 - set a current trip
+Step 4 - Write a function to iterate over all the trips ||  keep finding prev city till there's no other prev city left
+step 5 - compare current trip's 'from' property to every trip's 'to' property
+step 6 - if condtn. is true repeat the cycle, if condtn is false set first city == current city's from
+-->
+
+<html>
+
+<head>
+    <script>
+        var trip1 = { from: "Cologne", to: "Berlin" };
+        var trip2 = { from: "Munich", to: "Cologne" };
+        var trip3 = { from: "YourPlace", to: "Munich" };
+
+        var trips = [trip1, trip2, trip3];
+
+        function findPreviousCity(trips, city) {
+            var previousCity;
+            for (i = 0; i < trips.length; i++) {
+                if (trips[i].to == city.from) {
+                    previousCity = trips[i];
+                }
+            }
+            return previousCity;
+        }
+
+        function findFirstCityByIteratingOverAllTheTrips(trips, currentCity) {
+            var prev = findPreviousCity(trips, currentCity); //initialization
+            // RECURSION
+            if (prev == undefined) {
+                console.log("First city is" + currentCity.from);
+            } else {
+                return findFirstCityByIteratingOverAllTheTrips(trips, prev);
+            }
+        }
+
+
+            // WHILE
+            // while(prev != undefined) { //termination condition
+            //     currentCity = prev;
+            //     prev = findPreviousCity(trips, currentCity); //mutation
+            // }
+            // console.log("While => First city is" + currentCity.from);
+
+
+            // FOR 
+        //     for(;prev != undefined;) {//termination condition
+        //         currentCity = prev;
+        //         prev = findPreviousCity(trips, currentCity); //mutation
+        //     }
+        //     console.log("For => First city is" + currentCity.from);
+        // }
+
+
+        findFirstCityByIteratingOverAllTheTrips(trips, trips[0]);
+    </script>
+</head>
+
+</html>
