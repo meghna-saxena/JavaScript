@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <script>
+        var array = [2,4,6,7,9,11,5,10];
+
+        var result = [];
+
+        function findLastElement(array, result) {
+            for (i = 0; i < array.length; i++) {
+                if (array[i] % 2 == 0) {
+                    result.push(array[i]);
+                }
+            }
+            return result[result.length-1];
+        }
+
+        console.log(findLastElement(array, result));
+    </script>
+</head>
+
+</html>

@@ -1,0 +1,17 @@
+<html>
+<head>
+	<title>Recursions</title>
+	<script>
+		function goCrazyWithRecursion(counter) {
+			if (counter < 10) {
+				console.log("counter is now " + counter);
+				var stackNumber = counter;
+				counter = counter + 1;
+				goCrazyWithRecursion(counter);
+				console.log("counter after method " + counter);
+			}
+		}
+		goCrazyWithRecursion(3);
+	</script>
+</head>
+</html>
