@@ -1,0 +1,15 @@
+<html>
+<head>
+    <script>
+        function HelloWorld(count) {
+            if (count < 1) {
+                return
+            }
+            document.write("Hello World!" + "<br>");
+            HelloWorld(count - 1);
+        }
+
+        HelloWorld(10);
+    </script>
+</head>
+</html>
