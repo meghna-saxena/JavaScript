@@ -1,0 +1,43 @@
+<!-- Finds all the elements from the array with the id == 1, and push them to a new array 'result' -->
+
+<html>
+<head>
+    <script>
+        var array = [
+            { name: 'Saurabh', id: 1 },
+            { name: 'Surbhi', id: 2 },
+            { name: 'Jaamun', id: 1 },
+            { name: 'Raj', id: 3 }
+        ];
+
+        var result = [];
+
+        function findAllMatchingElements(array, result) {
+            for (i = 0; i < array.length; i++) {
+                if (array[i].id == 1) {
+                    result.push(array[i]);
+                }
+            }
+            return result;
+        }
+
+        console.log(findAllMatchingElements(array, result));
+
+// ===============================================================
+// Another example
+// ===============================================================
+        // var originalArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        // function loveTheThrees(array1) {
+        //     var threes = [];
+        //     for (var i = 0; i < array1.length; i++) {
+        //         if (array1[i] % 3 === 0) {
+        //             threes.push(array1[i]);
+        //         }
+        //     }
+        //     return threes;
+        // }
+
+        // document.write(loveTheThrees(originalArray));
+    </script>
+</head>
+</html>
