@@ -8,6 +8,7 @@ step 6 - if condtn. is true repeat the cycle, if condtn is false set first city 
 -->
 
 <html>
+
 <head>
     <script>
         var trip1 = { from: "Cologne", to: "Berlin" };
@@ -18,19 +19,23 @@ step 6 - if condtn. is true repeat the cycle, if condtn is false set first city 
 
         function findPreviousCity(trips, city) {
             var previousCity;
-            for (i = 0; i < trips.length; i++) {
-                if (trips[i].to == city.from) {
-                    previousCity = trips[i];
-                }
-            }
+            // for (i = 0; i < trips.length; i++) {
+            //     if (trips[i].to == city.from) {
+            //         previousCity = trips[i];
+            //     }
+            // }
+
+            previousCity = trips.find(function (el) {
+                return el.to == city.from
+            })
             return previousCity;
         }
 
         function findFirstCityByIteratingOverAllTheTrips(trips, currentCity) {
-            var prev = findPreviousCity(trips, currentCity); //initialization
+            var prev = findPreviousCity(trips, currentCity); //mutation
             // RECURSION
-            if (prev == undefined) {
-                console.log("First city is" + currentCity.from);
+            if (prev == undefined) { //termination
+                console.log("First city is " + currentCity.from);
             } else {
                 return findFirstCityByIteratingOverAllTheTrips(trips, prev);
             }
@@ -54,7 +59,8 @@ step 6 - if condtn. is true repeat the cycle, if condtn is false set first city 
         // }
 
 
-        findFirstCityByIteratingOverAllTheTrips(trips, trips[0]);
+        findFirstCityByIteratingOverAllTheTrips(trips, trips[0]); //initialization
     </script>
 </head>
+
 </html>

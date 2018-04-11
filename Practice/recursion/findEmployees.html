@@ -1,0 +1,43 @@
+<!-- 
+    - set a list 'person' of objects containing name and manager
+    - create a funct taking one manager
+    - iterate the manager over every name and check if persons's manager == manager's name
+    - increase the count 
+    - increase the count by calling the funct again for the current employees name; 
+    - print the total count
+-->
+
+<html>
+
+<head>
+    <script>
+        var employeeHierarchy = [
+            { name: 'Betty', manager: 'Sam' },
+            { name: 'Bob', manager: 'Sally' },
+            { name: 'Dilbert', manager: 'Nathan' },
+            { name: 'Joseph', manager: 'Sally' },
+            { name: 'Nathan', manager: 'Veronica' },
+            { name: 'Sally', manager: 'Veronica' },
+            { name: 'Sam', manager: 'Joseph' },
+            { name: 'Susan', manager: 'Bob' },
+            { name: 'Veronica', manager: null }
+        ];
+
+        function countEmployeesUnder(employeeHierarchy, managerName) {
+            var counter = 0;
+            for (var i = 0; i < employeeHierarchy.length; i++) {
+                if (employeeHierarchy[i].manager == managerName) {
+                    counter = counter + 1
+                    counter = counter + countEmployeesUnder(employeeHierarchy, employeeHierarchy[i].name)
+                    
+                }
+            }
+            return counter
+        }
+
+        var result = countEmployeesUnder(employeeHierarchy, "Sally");
+        console.log(result);
+    </script>
+</head>
+
+</html>

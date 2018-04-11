@@ -2,11 +2,22 @@
 
 <head>
     <script>
-        var i = 0;
-        while (i <= 5) {
+        var i = 0; //initialization
+        while (i <= 5) { // terminationCondition
             document.write(i + "<br>")
-            i++;
+            i++; // mutation 
         }
+
+        function printNums(i) {
+            if(i > 5) { // terminationCondition
+                return;
+            }
+            document.write(i + "<br>")
+            i = i + 1 //mutation
+            printNums(i)
+        }
+
+        printNums(0) // initialzation
     </script>
 
 </head>
